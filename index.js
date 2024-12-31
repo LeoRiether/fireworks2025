@@ -454,4 +454,6 @@ window.addEventListener('mousedown', event => {
 window.addEventListener('resize', () => {
     w = canvas.width = window.innerWidth;
     h = canvas.height = window.innerHeight;
+    ctx.fillStyle = 'black';
+    ctx.fillRect(0, 0, w, h);
 });
