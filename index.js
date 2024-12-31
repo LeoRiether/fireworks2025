@@ -139,7 +139,7 @@ function processPushes() {
 let gravity = variables.range("gravity", 806, 600, 2000);
 let startVx = variables.range("startVx", w/8, w/10, w/2);
 let timeToParticle = variables.range("ttp (ms)", 800, 500, 2000);
-let haloRadius = variables.range("halo radius", 12, 8, 18);
+let haloRadius = variables.range("halo radius", 10, 8, 18);
 let explosionForce = variables.range("explosion force", 46640400, 30000000, 90000000);
 let digitForce = variables.range("digit force", 1.5, 1, 2, 0.1);
 
@@ -310,7 +310,6 @@ function pushCountdown(seconds) {
 
 let ttp = 0;
 let targetDate = new Date(2025, 0, 1, 0, 0, 0);
-// targetDate = new Date(2024, 11, 30, 23, 40, 0);
 let beforeMidnight = true;
 let lastSecondsTillMidnight;
 function update(dt) {
