@@ -310,7 +310,7 @@ function pushCountdown(seconds) {
 
 let ttp = 0;
 let targetDate = new Date(2026, 0, 1, 0, 0, 0);
-targetDate = new Date(2026, 0, 1, 2, 0, 0);
+targetDate = new Date(2026, 0, 1, 0, 0, 0);
 let beforeMidnight = true;
 let lastSecondsTillMidnight;
 function update(dt) {
