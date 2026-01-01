@@ -309,7 +309,8 @@ function pushCountdown(seconds) {
 }
 
 let ttp = 0;
-let targetDate = new Date(2025, 0, 1, 0, 0, 0);
+let targetDate = new Date(2026, 0, 1, 0, 0, 0);
+targetDate = new Date(2026, 0, 1, 2, 0, 0);
 let beforeMidnight = true;
 let lastSecondsTillMidnight;
 function update(dt) {
@@ -337,7 +338,7 @@ function update(dt) {
         let secondsTillMidnight = ~~((targetDate - MyDate.now()) / 1000);
         if (secondsTillMidnight <= 0) {
             for (let i = 0; i < 5; i++)
-                setTimeout(() => pushText("2025"), i*1000);
+                setTimeout(() => pushText("2026"), i*1000);
             beforeMidnight = false;
         } else if (lastSecondsTillMidnight != secondsTillMidnight) {
             pushCountdown(secondsTillMidnight);
